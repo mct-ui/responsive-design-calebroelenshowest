@@ -39,7 +39,7 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
+    font-family: "HK Grotesk Web", sans-serif;
     color: #202024;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -197,6 +197,16 @@ a:hover{
     .o-row {
         padding-left: 48px;
         padding-right: 48px;
+    }
+    html{
+        font-size: 20px;
+        line-height: 1.6;
+        max-width: 70em;
+    }
+    h1,
+    h2,
+    h3 {
+       font-weight: 200;
     }
 
     .o-row--lg {
