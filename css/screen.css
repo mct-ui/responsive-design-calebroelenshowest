@@ -213,6 +213,10 @@ a:hover{
         padding-top: 72px;
         padding-bottom: 48px;
     }
+
+    .c-logo {
+        height: 40px;
+    }
 }
 
 /*
@@ -349,6 +353,13 @@ a:hover{
   #COMPONENTS
 \*------------------------------------*/
 
+.c-logo {
+    height: 32px;
+}
+
+.c-logo__symbol {
+    height: 100%;
+}
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
