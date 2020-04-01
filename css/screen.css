@@ -171,6 +171,12 @@ a:hover{
     color: #3E3EA8;
 }
 
+.breakpoint3 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
@@ -198,6 +204,23 @@ a:hover{
         padding-left: 48px;
         padding-right: 48px;
     }
+
+    .o-row--md {
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+
+    .o-row--lg {
+        padding-top: 72px;
+        padding-bottom: 48px;
+    }
+
+    .o-section--lg + .o-section--lg,
+    .o-section--xl + .o-section--xl {
+        margin-top: 48px;
+    }
+
+
     html{
         font-size: 20px;
         line-height: 1.6;
@@ -216,6 +239,14 @@ a:hover{
 
     .c-logo {
         height: 40px;
+    }
+
+    .c-nav__list{
+        display: flex;
+    }
+
+    .c-nav__link{
+        padding: 8px 16px;
     }
 }
 
@@ -239,6 +270,11 @@ a:hover{
     contains the basic structural elements, but classes should be complemented
     with width utilities
 */
+
+.o-list{
+    list-style: none;
+    padding: 0;
+}
 
 .o-layout {
     display: -webkit-flex;
@@ -349,6 +385,10 @@ a:hover{
     align-content: space-between;
 }
 
+.o-section + .o-section {
+    margin-top: 24px;
+}
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
@@ -360,6 +400,78 @@ a:hover{
 .c-logo__symbol {
     height: 100%;
 }
+
+.c-nav {
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+}
+
+.c-nav__link {
+    text-decoration: none;
+    font-weight: 400;
+    padding: 8px 8px;
+}
+
+.c-nav__link,
+.c-nav__link:visited,
+.c-nav__link:active{
+    color:#202024;
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus{
+    color: #5051db;
+}
+
+.c-nav--meta{
+    font-size: 16px;
+}
+
+.c-nav__link--meta,
+.c-nav__link--meta:visited,
+.c-nav__link--meta:active{
+    color: #6C6C75;
+}
+
+.c-nav__link--meta:hover,
+.c-nav__link--meta:focus{
+    color: #5051DB;
+}
+
+.active,
+.c-nav__link:hover,
+.c-nav__link:focus{
+    color: #5051DB;
+}
+
+.c-header__nav {
+    display: none;
+}
+
+.c-header__logo {
+    margin-right: 20px;
+}
+
+.c-text {
+    margin-left: 20px;
+}
+
+@media (min-width: 992px) {
+    .c-header {
+        display: inline-flex;
+        align-items: center;
+    }
+    .c-nav__link--meta{
+        align-items: flex-end;
+    }
+
+    .c-header__nav {
+        display: block;
+
+    }
+}
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
@@ -595,6 +707,10 @@ a:hover{
     .u-5-of-6-bp4 {
         flex-basis: calc(100% / 6 * 5) !important;
     }
+}
+
+.u-pt-clear {
+    padding-top: 0 !important;
 }
 
 /*------------------------------------*\
