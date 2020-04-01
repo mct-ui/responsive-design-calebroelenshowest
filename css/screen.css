@@ -393,6 +393,15 @@ a:hover{
   #COMPONENTS
 \*------------------------------------*/
 
+.c-lead {
+    font-weight: 200;
+}
+
+.c-lead--lg{
+    font-size: 20px;
+    line-height: 32px;
+}
+
 .c-logo {
     height: 32px;
 }
@@ -711,6 +720,18 @@ a:hover{
 
 .u-pt-clear {
     padding-top: 0 !important;
+}
+
+.u-color-primary-light {
+    color: #7373F5; !important;
+}
+
+.u-color-primary-base {
+    color: #5051DB; !important;
+}
+
+.u-color-primary-dark {
+    color: #3E3EA8; !important;
 }
 
 /*------------------------------------*\
