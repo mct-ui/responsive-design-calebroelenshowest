@@ -389,9 +389,18 @@ a:hover{
     margin-top: 24px;
 }
 
+
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
+.c-list-item {
+    margin-right: 20px;
+}
+.c-list-inline {
+    display: inline-flex;
+}
 
 .c-lead {
     font-weight: 200;
